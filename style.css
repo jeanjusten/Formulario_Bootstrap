@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 :root {
@@ -21,7 +22,8 @@ html {
 /*STYLING*/
 h2 {
     font-family: "Rubik", sans-serif;
-    padding-top: 80px !important;
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
 }
 
 .form {
@@ -81,3 +83,10 @@ input:focus:invalid {
     outline-color: var(--color-warning)
 }
 
+.logo-img {
+    width: 100%;
+    max-width: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
