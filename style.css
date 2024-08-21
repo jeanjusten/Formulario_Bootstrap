@@ -1,0 +1,83 @@
+/*RESET + PRIMARY CONFIGS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d; 
+    --color-valid:  #28a745; 
+    --color-invalid: #dc3545; 
+    --color-warning: #f87103;
+    --color-icons: #0096ec;
+}
+
+/*STYLING*/
+h2 {
+    font-family: "Rubik", sans-serif;
+    padding-top: 80px !important;
+}
+
+.form {
+    width: 450px;
+}
+
+.input-group {
+    position: relative;
+}
+.input-group .input-group-text {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 2.5rem; 
+    height: 2.5rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem; 
+}
+.form-control {
+    padding-left: 3rem; /* Espaço suficiente para o ícone dentro do campo de input */
+}
+
+.svg-icon{
+    color: var(--color-icons);
+}
+
+#checkbox1 {
+    outline: none;
+}
+
+input {
+    outline: 2px solid hsl(216, 100%, 81%);
+    box-shadow: 0 3px px rgba(0,0,0,0.35);
+}
+
+input:user-valid {
+    outline-color: var(--color-valid);
+}
+
+input:focus:user-valid {
+    outline-color: var(--color-valid);
+}
+
+input:user-invalid {
+    outline-color: var(--color-invalid);
+}
+
+input:focus:invalid {
+    outline-color: var(--color-warning)
+}
+
